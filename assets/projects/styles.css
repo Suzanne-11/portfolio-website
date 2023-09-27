@@ -20,12 +20,47 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.pro-pic{
-  height: 50vh;
+header{
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+header h1{
+  color: #f56a6a;
+  font-weight: bolder;
+}
+.project-description {
+  margin: 2rem auto; /* Center horizontally by using auto margin */
+  width: 70vw; /* Use 75% of the viewport width */
+  text-align: justify; /* Center align text horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-screenshots{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.project-screenshots, .project-technologies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Optional: Center the text horizontally */
+} 
+
+.pro-desc, .project-screenshots-h2, .project-technologies-h2{
+  margin-top: 2em ;
+  margin-bottom: 1em;
+  color: #f56a6a;
+  text-align: center;
+  border-bottom: 2px solid black;
 }
 
 .image-gallery {
-  width: 80%;
+  width: 80vw;
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent line breaks for inline-block elements */
 }
@@ -47,159 +82,191 @@ body {
   /* You can also set a max-width if necessary */
 }
 
-header{
-    text-align: center;
-    padding-top: 1rem;
-    margin-top: 1rem;
-}
-header h1{
-    color: #f56a6a;
-    font-weight: bolder;
-}
-.project-description {
-    margin: 2rem auto; /* Center horizontally by using auto margin */
-    width: 75vw; /* Use 75% of the viewport width */
-    text-align: justify; /* Center align text horizontally */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-screenshots{
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.project-screenshots, .project-technologies{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Optional: Center the text horizontally */
-}
-.pro-desc, .project-screenshots-h2, .project-technologies-h2{
-    margin-top: 2em ;
-    margin-bottom: 1em;
-    color: #f56a6a;
-    text-align: center;
-    border-bottom: 2px solid black;
-    
+.pro-pic{
+  height: 50vh;
 }
 
 .actions{
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
-    text-align: center;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
+  text-align: center;
+  gap: 10px;
+  }
 
-.actions-list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row; /* Arrange items vertically */
-    gap: 20px; /* Adjust the gap between items as needed */
-    text-align: center;
-    align-items: center;
-}
+  .actions .action-btn a{
+    text-decoration: none;
+    color: white;
+  }
 
-.actions-list li {
+  .actions .action-btn{
     padding: 10px; /* Adjust padding as needed */
     background-color: #f56a6a;
     margin-top: 20px;
     width: 200px;
     border-radius: 10px;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    border: none;
   }
 
-  .actions-list li:hover {
+  .actions .action-btn:hover{
     padding: 10px; /* Adjust padding as needed */
     background-color: #e43838;
     margin-top: 20px;
     width: 200px;
     border-radius: 10px;
     font-weight: bold;
+    border: none;
+  }
+
+@media screen and (max-width: 768px) {
+  .actions {
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
     text-align: center;
-    align-items: center;
+    gap: 10px;
   }
-
-  .actions-list li a{
-    text-decoration: none;
-    color: white;
+  .actions .action-btn{
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #f56a6a;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
   }
+  .actions .action-btn:hover{
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #e43838;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+  }
+  .techs-list li {
+    color: #f56a6a;
+    font-weight: bold;
+  }
+  .techs-used {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;  
+    overflow: auto;   
+    padding: 2px;  
+    width: 80vw;
+  }
+  .project-technologies{
+    display: flex;
+    flex-direction: column;
+  }
+  .techs-list {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    text-align: center; /* Center text within list items */
+  }
+  .tech-icon{
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
 
+}
+ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
 
 ul li{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .tech-icon{
-    padding: 4px;
+  padding: 4px;
+  color: black;
+  font-size: 40px;
 }
 
 .pro-features{
-    color: #f56a6a;
-    font-weight: bold;
+  color: #f56a6a;
+  font-weight: bold;
 }
 
 /* Center the container horizontally and vertically */
 .techs-used {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-  
-  /* Style the list to have space around items */
-  .techs-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row; /* Arrange items vertically */
-    gap: 20px; /* Adjust the gap between items as needed */
-    text-align: center; /* Center text within list items */
-  }
-  
-  /* Optional: Add additional styling for list items */
-  .techs-list li {
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: #f56a6a;
-    font-weight: bold;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
 
-  .tech-icon{
-    color: black;
-  }
+/* Style the list to have space around items */
+.techs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row; /* Arrange items vertically */
+  gap: 20px; /* Adjust the gap between items as needed */
+  text-align: center; /* Center text within list items */
+}
 
-  .pro-links ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row; /* Arrange items vertically */
-    gap: 20px; /* Adjust the gap between items as needed */
-    text-align: center; 
-  }
+/* Optional: Add additional styling for list items */
+.techs-list li {
+  padding: 10px auto; /* Adjust padding as needed */
+  color: #f56a6a;
+  font-weight: bold;
+}
 
-  .pro-links ul li{
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: #f56a6a;
-    font-weight: bold;
+footer{
+  text-align: center;
+  background-color: rgb(132, 132, 132);
+  padding: 8px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.2; 
+}
+  .hero-img {
+    max-width: 90vw; /* Adjust the max-width for smaller screens */
+    /* You can add additional styling here for smaller screens */
   }
-  
-  footer{
+  header{
     text-align: center;
-    background-color: rgb(132, 132, 132);
-    padding: 8px;
+    padding-top: 1rem;
     margin: 10px;
   }
+  header h1{
+      color: #f56a6a;
+      font-weight: bold;
+  }
+  .pro-info{
+    line-height: 1.3; 
+  }
+  .pro-pic{
+    height: 50vh;
+  }
+ 
+}
+
+
+
+
+
