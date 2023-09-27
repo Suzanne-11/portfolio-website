@@ -1,0 +1,205 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles for the page */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65; 
+}
+
+.hero-img{
+  width: 60vw;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pro-pic{
+  height: 50vh;
+}
+
+.image-gallery {
+  width: 80%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks for inline-block elements */
+}
+
+.image-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0; /* Remove any default spacing between inline-block elements */
+}
+
+.image-list li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between images */
+}
+
+.image-list img {
+  max-height: 50vh; /* Limit the height of images (adjust as needed) */
+  /* You can also set a max-width if necessary */
+}
+
+header{
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+header h1{
+    color: #f56a6a;
+    font-weight: bolder;
+}
+.project-description {
+    margin: 2rem auto; /* Center horizontally by using auto margin */
+    width: 75vw; /* Use 75% of the viewport width */
+    text-align: justify; /* Center align text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-screenshots{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.project-screenshots, .project-technologies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Optional: Center the text horizontally */
+}
+.pro-desc, .project-screenshots-h2, .project-technologies-h2{
+    margin-top: 2em ;
+    margin-bottom: 1em;
+    color: #f56a6a;
+    text-align: center;
+    border-bottom: 2px solid black;
+    
+}
+
+.actions{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    text-align: center;
+    }
+
+.actions-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Arrange items vertically */
+    gap: 20px; /* Adjust the gap between items as needed */
+    text-align: center;
+    align-items: center;
+}
+
+.actions-list li {
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #f56a6a;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .actions-list li:hover {
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #e43838;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .actions-list li a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tech-icon{
+    padding: 4px;
+}
+
+.pro-features{
+    color: #f56a6a;
+    font-weight: bold;
+}
+
+/* Center the container horizontally and vertically */
+.techs-used {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Style the list to have space around items */
+  .techs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Arrange items vertically */
+    gap: 20px; /* Adjust the gap between items as needed */
+    text-align: center; /* Center text within list items */
+  }
+  
+  /* Optional: Add additional styling for list items */
+  .techs-list li {
+    padding: 10px 20px; /* Adjust padding as needed */
+    color: #f56a6a;
+    font-weight: bold;
+  }
+
+  .tech-icon{
+    color: black;
+  }
+
+  .pro-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Arrange items vertically */
+    gap: 20px; /* Adjust the gap between items as needed */
+    text-align: center; 
+  }
+
+  .pro-links ul li{
+    padding: 10px 20px; /* Adjust padding as needed */
+    color: #f56a6a;
+    font-weight: bold;
+  }
+  
+  footer{
+    text-align: center;
+    background-color: rgb(132, 132, 132);
+    padding: 8px;
+    margin: 10px;
+  }
