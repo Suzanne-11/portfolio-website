@@ -31,6 +31,11 @@ footer, header, hgroup, menu, nav, section {
   width: 20vh;
 }
 
+.project-img{
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(155, 155, 155, 0.47);
+}
+
 body {
   line-height: 1; }
 
